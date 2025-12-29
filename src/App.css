@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@layer base {
+  :root {
+    --background: rgba(20, 19, 27, 1);
+    --foreground: rgba(247, 246, 255, 1);
+
+    --main-gradient: linear-gradient(
+      135deg,
+      rgba(158, 132, 255, 0.1),
+      rgba(20, 19, 27, 1),
+      rgba(158, 132, 255, 0.1)
+    );
+
+    --radial-gradient: radial-gradient(
+      50% 100% at 50% 100%,
+      rgba(158, 132, 255, 0.2),
+      #fff0 100%
+    );
+
+    --card: rgba(27, 26, 36, 1);
+    --card-foreground: rgba(247, 246, 255, 1);
+    --popover: rgba(27, 26, 36, 1);
+    --popover-foreground: rgba(247, 246, 255, 1);
+    --primary: rgba(158, 132, 255, 1);
+    --primary-foreground: rgba(251, 250, 255, 1);
+    --secondary: rgba(50, 47, 63, 1);
+    --secondary-foreground: rgba(230, 228, 239, 1);
+    --muted: rgba(50, 47, 63, 1);
+    --muted-foreground: rgba(167, 165, 176, 1);
+    --accent: rgba(56, 52, 70, 1);
+    --accent-foreground: rgba(230, 228, 239, 1);
+    --destructive: rgba(231, 77, 49, 1);
+    --destructive-foreground: rgba(255, 255, 255, 1);
+    --success: rgba(72, 199, 113, 1);
+    --success-foreground: rgba(255, 255, 255, 1);
+    --border: rgba(63, 60, 79, 1);
+    --input: rgba(50, 47, 63, 1);
+    --ring: rgba(158, 132, 255, 1);
+    --glow: rgba(158, 132, 255, 0.4);
+    --chart-1: rgba(132, 94, 255, 1);
+    --chart-2: rgba(191, 207, 109, 1);
+    --chart-3: rgba(255, 205, 79, 1);
+    --chart-4: rgba(173, 116, 255, 1);
+    --chart-5: rgba(255, 163, 73, 1);
+    --sidebar: rgba(31, 31, 31, 1);
+    --sidebar-foreground: rgba(255, 255, 255, 1);
+    --sidebar-primary: rgba(132, 94, 255, 1);
+    --sidebar-primary-foreground: rgba(255, 255, 255, 1);
+    --sidebar-accent: rgba(46, 46, 46, 1);
+    --sidebar-accent-foreground: rgba(255, 255, 255, 1);
+    --sidebar-border: rgba(46, 46, 46, 1);
+    --sidebar-ring: rgba(89, 89, 89, 1);
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: block;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--muted);
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
