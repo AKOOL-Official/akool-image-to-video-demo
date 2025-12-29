@@ -1,7 +1,7 @@
 <div align="center">
   <img src="public/akool-dark.svg" alt="Akool Logo" width="180"/>
   
-  # 🎬 Image to Video AI Studio
+  # Image to Video AI Studio
   
   **Transform static images into stunning AI-generated videos with just a prompt**
   
@@ -10,59 +10,61 @@
   [![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
   
-  [Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [API Setup](#-api-setup) • [Internationalization](#-internationalization)
+  [Features](#features) • [Demo](#demo) • [Installation](#installation) • [Usage](#usage) • [API Setup](#api-setup) • [Internationalization](#internationalization)
 </div>
 
 ---
 
-## ✨ Features
+## Features
 
-### 🖼️ AI-Powered Video Generation
+### AI-Powered Video Generation
 - **Multiple AI Models** — Choose from various providers including Akool, Kling, and more
 - **Smart Prompting** — Describe how you want your image animated with natural language
 - **Negative Prompts** — Specify what to avoid for precise results
 - **Batch Generation** — Generate multiple video variations simultaneously
 
-### 🎨 Visual Effects Library
+### Visual Effects Library
 - **Pre-built Effects** — Browse and apply stunning visual effects to your videos
 - **Live Previews** — See effect demonstrations before applying
 - **No Effect Option** — Generate clean animations without additional effects
 
-### 🎵 Flexible Audio Options
+### Flexible Audio Options
+
 | Option | Description |
 |--------|-------------|
-| 🤖 **AI Generated** | Let AI create matching audio for your video |
-| 📤 **Custom Upload** | Provide your own audio via URL |
-| 🔇 **None** | Generate silent videos |
+| AI Generated | Let AI create matching audio for your video |
+| Custom Upload | Provide your own audio via URL |
+| None | Generate silent videos |
 
-### ⚙️ Customizable Output
+### Customizable Output
 - **Resolution Options** — 720p (HD), 1080p (Full HD), 4K (Ultra HD)
 - **Duration Control** — Multiple duration options per model (5s, 10s, etc.)
 - **Quality Tiers** — Free and Premium model options
 
-### 🌍 Multi-Language Support
-Built-in internationalization with support for:
-- 🇺🇸 English
-- 🇨🇳 中文 (Chinese)
-- 🇯🇵 日本語 (Japanese)
-- 🇰🇷 한국어 (Korean)
+### Multi-Language Support
 
-### 💎 Premium User Experience
-- **Beautiful Animations** — Smooth Framer Motion transitions throughout
+Built-in internationalization with support for:
+- English
+- 中文 (Chinese)
+- 日本語 (Japanese)
+- 한국어 (Korean)
+
+### Premium User Experience
+- **Smooth Animations** — Framer Motion transitions throughout
 - **Interactive Particles** — Dynamic WebGL particle background
 - **Credit Tracking** — Real-time display of available credits
 - **Progress Monitoring** — Live status updates during generation
 
 ---
 
-## 🎥 Demo
+## Demo
 
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>🔐 Authentication</b></td>
-      <td align="center"><b>🎬 Generation Form</b></td>
-      <td align="center"><b>📹 Result View</b></td>
+      <td align="center"><b>Authentication</b></td>
+      <td align="center"><b>Generation Form</b></td>
+      <td align="center"><b>Result View</b></td>
     </tr>
     <tr>
       <td>API Key or OAuth credentials</td>
@@ -74,7 +76,7 @@ Built-in internationalization with support for:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technologies |
 |----------|--------------|
@@ -89,20 +91,20 @@ Built-in internationalization with support for:
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
 - **Node.js** 18.x or higher
-- **npm** or **yarn** or **pnpm**
+- **npm**, **yarn**, or **pnpm**
 - **Akool API credentials** ([Get them here](https://akool.com))
 
 ### Quick Start
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/image-to-video-frontend.git
-cd image-to-video-frontend
+git clone https://github.com/AkoolLabs/i2v-demo.git
+cd i2v-demo
 
 # Install dependencies
 npm install
@@ -115,9 +117,9 @@ The app will be available at `http://localhost:5173`
 
 ---
 
-## 🚀 Usage
+## Usage
 
-### 1️⃣ Authentication
+### 1. Authentication
 
 Choose your preferred authentication method:
 
@@ -127,7 +129,7 @@ Choose your preferred authentication method:
 | **Client Credentials** | OAuth flow for production applications |
 
 <details>
-<summary>🔑 Using API Key</summary>
+<summary>Using API Key</summary>
 
 1. Enter your Akool API key in the "API Key" tab
 2. Click "Submit" to authenticate
@@ -136,7 +138,7 @@ Choose your preferred authentication method:
 </details>
 
 <details>
-<summary>🔐 Using Client Credentials</summary>
+<summary>Using Client Credentials</summary>
 
 1. Switch to the "Credentials" tab
 2. Enter your **Client ID** and **Client Secret**
@@ -144,15 +146,15 @@ Choose your preferred authentication method:
 
 </details>
 
-### 2️⃣ Generate Videos
+### 2. Generate Videos
 
 1. **Provide an Image** — Enter a publicly accessible image URL
 2. **Write a Prompt** — Describe the animation you want
 3. **Select AI Model** — Choose from available providers (Free/Pro)
 4. **Configure Settings** — Resolution, duration, audio, effects
-5. **Generate** — Click the generate button and wait for your video!
+5. **Generate** — Click the generate button and wait for your video
 
-### 3️⃣ View Results
+### 3. View Results
 
 - **Preview** — Watch your generated video(s) directly in the browser
 - **Download** — Save videos to your device
@@ -161,7 +163,7 @@ Choose your preferred authentication method:
 
 ---
 
-## 🔑 API Setup
+## API Setup
 
 This application uses the [Akool OpenAPI](https://docs.akool.com). You'll need to:
 
@@ -200,7 +202,7 @@ server: {
 
 ---
 
-## 🌐 Internationalization
+## Internationalization
 
 The app supports multiple languages out of the box. Language files are located in:
 
@@ -226,7 +228,7 @@ public/
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -263,7 +265,7 @@ src/
 
 ---
 
-## 📜 Available Scripts
+## Available Scripts
 
 | Command | Description |
 |---------|-------------|
@@ -274,7 +276,7 @@ src/
 
 ---
 
-## 🎨 Customization
+## Customization
 
 ### Theming
 
@@ -304,13 +306,13 @@ Configure the particle effect in `App.tsx`:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Akool](https://akool.com) for the powerful Image-to-Video API
 - [Radix UI](https://www.radix-ui.com/) for accessible UI primitives
@@ -320,7 +322,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <p>Built using React & Akool AI</p>
+  <p>Built with React & Akool AI</p>
   
   <a href="https://akool.com">
     <img src="public/akool-dark.svg" alt="Akool" width="100"/>
